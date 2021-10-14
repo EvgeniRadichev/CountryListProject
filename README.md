@@ -8,7 +8,8 @@ instance running Ubuntu 20.04 using [gevent](http://www.gevent.org/).
 The setup in AWS involves downloading and updating standard packages, creating
 a Python virtual environment for our application, and installing necessary 
 Python packages. All necessary Python packages can be found in the 
-'requirements.txt' file. The following commands will perform these tasks:
+'requirements.txt' file. The following commands will perform these tasks, assuming
+this repository has been cloned and exists as a directory named 'CountryListProject':
 
 ```
 $ sudo apt update
@@ -17,6 +18,7 @@ $ sudo apt install -y python3-pip
 $ sudo apt install -y python3-venv
 $ python3 -m venv country_list
 $ source country_list/bin/activate
+$ cd CountryListProject
 $ pip install -r requirements.txt
 ```
 
